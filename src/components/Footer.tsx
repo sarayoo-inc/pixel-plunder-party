@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Github, Twitter, Discord } from 'lucide-react';
+import { Github, Twitter, MessageSquare } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -16,7 +15,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-6">
               <a href="#" className="text-white hover:text-retro-purple transition-colors">
-                <Discord size={20} />
+                <MessageSquare size={20} />
               </a>
               <a href="#" className="text-white hover:text-retro-purple transition-colors">
                 <Twitter size={20} />
