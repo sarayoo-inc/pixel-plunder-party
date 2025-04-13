@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +100,29 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-retro-dark text-white;
   }
+}
+
+/* Pixel art styles */
+.pixel-borders {
+  box-shadow: 
+    -4px 0 0 0 #000,
+    4px 0 0 0 #000,
+    0 -4px 0 0 #000,
+    0 4px 0 0 #000;
+}
+
+.pixel-card {
+  image-rendering: pixelated;
+  position: relative;
+  border: 4px solid #000;
+}
+
+.pixel-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  pointer-events: none;
 }
